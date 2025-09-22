@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --bordo: #7b1e3d;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bordo);
+            margin: 0;
+            padding: 0;
+            padding-bottom: 60px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .button-row a {
+            font-size: 16px;
+            color: #000;
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .button-row a:hover {
+            color: #0000008e;
+            text-decoration: underline;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            background: #fff;
+            margin: 10px 20px;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            min-height: 80vh;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            color: #540000;
+        }
+
+        .mainbox {
+            width: 78%;
+            min-height: 80vh;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            text-align: left;
+        }
+
+        .filedrop {
+            min-height: 40vh;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .button-size {
+            font-size: 40px;
+            background-color: #efefef;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+
+        .button-size:hover {
+            background-color: #dcdcdc;
+        }
+
+        .clickable {
+            cursor: pointer;
+            text-decoration: none;
+            color: #540000;
+        }
+
+        .clickable:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #540000;
+        }
+
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li a {
+            text-decoration: none;
+            color: #540000;
+            display: block;
+            padding: 5px 0;
+        }
+
+        .sidebar li a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer {
+            background: var(--bordo);
+            color: #fff;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footlinks {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 12px;
+        }
+
+        .footlinks a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footlinks a:hover {
+            text-decoration: underline;
+        }
+
+        .copy {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="button-row">
+    <a href="#">Русский ▼</a>
+    <a href="#">Тест Тест</a>
+</div>
+<hr>
+
+<div class="box">
+    <a href="#"><img src="image.png" alt="profile" width="50" height="50"></a>
+    <h3 style="color: #540000;"><a href="#" class="clickable">Тест Тест</a></h3>
+    <p class="breadcrumbs">
+        <a href="first.html">Главная</a> /
+        <a href="#">Страницы</a> /
+        <a href="#">Приватные файлы</a>
+    </p>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Навигация</h3>
+        <ul>
+            <li><a href="first.html">► Главная</a></li>
+            <li><a href="#">► Панель управления</a></li>
+            <li><a href="#">► Страницы</a></li>
+            <li><a href="courses.html">► Мои курсы</a></li>
+        </ul>
+    </div>
+
+    <div class="mainbox">
+        <h2><a href="#" class="clickable">Личные файлы</a></h2>
+        <p><a href="#" class="clickable">Files</a></p>
+        <div class="filedrop">
+            <div class="button-row">
+                <a href="#">Добавить файлы</a>
+            </div>
+            <p><a href="#" class="clickable">Вы можете перетащить файлы сюда</a></p>
+            <a href="#" class="button-size">+</a>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+        <nav aria-label="Ссылки подвала">
+            <ul class="footlinks">
+                <li><a href="#">Справка</a></li>
+                <li><a href="support.html">Поддержка</a></li>
+                <li><a href="#">Политика</a></li>
+            </ul>
+        </nav>
+        <small class="copy">Made by Team Insignia</small>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка - FAQ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7b1e3d;
+            color: #000;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #7b1e3d;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 16px;
+            border: 1px solid #7b1e3d;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #7b1e3d;
+            color: #fff;
+        }
+
+        .faq-section {
+            margin-bottom: 30px;
+        }
+
+        .faq-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+            border-left: 4px solid #7b1e3d;
+            padding-left: 15px;
+        }
+
+        .faq-item {
+            background: #f9f9f9;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+        }
+
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-support {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .contact-support h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: #7b1e3d;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: #5a001c;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .faq-question {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="first.html" class="back-button">← На главную</a>
+
+    <div class="header">
+        <h1>Центр поддержки</h1>
+        <p>Часто задаваемые вопросы и полезная информация</p>
+    </div>
+
+    <div class="faq-section">
+        <h2>Работа с файлами</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Как добавить файлы в систему?</div>
+            <div class="faq-answer">
+                <p>Для добавления файлов вы можете использовать кнопку "Добавить файлы" или просто перетащить файлы в область загрузки. Также доступна кнопка "+" для быстрого добавления.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Какие типы файлов поддерживаются?</div>
+            <div class="faq-answer">
+                <p>Система поддерживает все основные форматы файлов: документы (PDF, DOC, DOCX), изображения (JPG, PNG, GIF), архивы (ZIP, RAR) и другие. Максимальный размер файла - 100 МБ.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как организовать файлы в папки?</div>
+            <div class="faq-answer">
+                <p>В настоящее время функция создания папок находится в разработке. Следите за обновлениями системы.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2>Учетная запись и безопасность</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Как изменить пароль?</div>
+            <div class="faq-answer">
+                <p>Для изменения пароля перейдите в настройки профиля - Безопасность - Изменить пароль. Рекомендуем использовать сложные пароли.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Мои файлы защищены?</div>
+            <div class="faq-answer">
+                <p>Да, все файлы хранятся в зашифрованном виде и доступны только вам и преподавателям, на чьих курсах вы их загрузили. Мы соблюдаем строгую политику конфиденциальности.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2>Технические вопросы</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">Система не загружает файлы, что делать?</div>
+            <div class="faq-answer">
+                <p>Проверьте подключение к интернету, размер файла (не более 100 МБ) и попробуйте использовать другой браузер. Если проблема продолжается, обратитесь в поддержку.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Поставят ли нам 100 баллов?</div>
+            <div class="faq-answer">
+                <p>Да</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-support">
+        <h3>Не нашли ответ на свой вопрос?</h3>
+        <p>Вам никто не поможет!</p>
+        <a href="support.html" class="contact-button">Покликайте если думаете что это поможет</a>
+    </div>
+</div>
+</body>
+</html>
